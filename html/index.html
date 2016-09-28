@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
     <div id="example-1">
-        hello,{{ name }}
+        hello,{{ name }}...<br>
+        <P>{{message}}</P>
+        <input id="double" v-model="message">
+
+        <ul>
+            <li v-for="arr in arrays">
+                {{arr.text}}
+            </li>
+        </ul>
+        <button id="btn" v-on:click="alert">this is button</button>
     </div>
 </body>
 <script src="../jslib/vue.js"></script>
