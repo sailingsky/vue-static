@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <input v-model="count">
+        <p>{{count}}</p>
+        <p>
+            <button @click="incre">+</button>
+            <button @click="decre">-</button>
+        </p>
+    </div>
+</body>
+<script src="../jslib/vue.js"></script>
+<script src="../jslib/vuex.js"></script>
+<script src="../js/statusStore.js"></script>
+</html>
